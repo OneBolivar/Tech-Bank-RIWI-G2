@@ -1,4 +1,5 @@
 print("GRUPO 2")
+
 for i in range(3):
     pin = input("Ingrese el pin ")
     if pin== "123":
@@ -6,4 +7,4 @@ for i in range(3):
     else:
         print("Contraseña incorrecta. Inténtalo de nuevo.")
 else:
-    print("Has agotado tus intentos. Acceso denegado.")
+    print("Has agotado tus intentos. Acceso denegado. ")
