@@ -1,1 +1,0 @@
-print("GRUPO 2")
