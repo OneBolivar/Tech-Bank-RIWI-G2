@@ -1,1 +1,1 @@
-print("GRUPO 2")
+print("...: Bievenidos al cajero automatico TechBank Riwi Digital:...")
