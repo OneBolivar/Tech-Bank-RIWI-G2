@@ -1,1 +1,1 @@
-print("Grupos: 2 ")
+print("Grupos: 2 :)")
