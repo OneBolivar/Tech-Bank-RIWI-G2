@@ -1,6 +1,4 @@
 
-from retiro import retirar_dinero
-
-valor=int(input("Ingrese el valor a retirar: "))
-saldo=1000
-print(retirar_dinero(valor, saldo))
+def retirar_dinero(valor, saldo):
+    saldo -= valor
+    print(f"Has retirado {valor}. Tu nuevo saldo es {saldo}.")
