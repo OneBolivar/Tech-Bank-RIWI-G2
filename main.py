@@ -1,1 +1,0 @@
-print("Grupos: 2 :)")
