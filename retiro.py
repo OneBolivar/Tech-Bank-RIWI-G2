@@ -1,6 +1,5 @@
-def retiro(saldo):
-        Validador = True
-        Retiro = float(input("Ingrese monto a retirar: "))
+def retiro(Retiro,saldo):
+       
         while Validador:
             if Retiro < 0:
                 print("Ingrese una cantidad valida")

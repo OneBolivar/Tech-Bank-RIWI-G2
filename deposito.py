@@ -1,4 +1,4 @@
-def deposito(saldo):
+def deposito(Deposito,saldo):
     Validador = True
     while Validador:
         Deposito = float(input("Ingrese monto a depositar: "))
