@@ -18,10 +18,7 @@ for i in range(3):
 else:
     print("Has agotado tus intentos. Acceso denegado. ")
 
-<<<<<<< HEAD
 
-=======
 def retirar_dinero(valor, saldo):
     saldo -= valor
     print(f"Has retirado {valor}. Tu nuevo saldo es {saldo}.")
->>>>>>> origin/retiro-dinero
