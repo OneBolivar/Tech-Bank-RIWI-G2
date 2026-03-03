@@ -11,5 +11,5 @@ def menu(saldo):
     elif Ejecucion == 4:
         return False
     else:
-         print("Opcion invalida ")
+         print("Opcion invalida")
          
