@@ -7,5 +7,5 @@ def menu(saldo):
     elif Ejecucion == 3: 
         print("bloque 3")
     else:
-         print("Opcion invalida")
+         print("Opcion invalida ")
          
