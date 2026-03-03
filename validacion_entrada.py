@@ -19,8 +19,5 @@ def validacion_deposito(monto):
         else:
             print("ingreso correctamente el monto a depositar:")
             break
-<<<<<<< HEAD
 
     
-=======
->>>>>>> origin/feature-validacion-reglas-negocio
