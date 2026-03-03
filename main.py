@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from retiro_diario import control_de_retiro
 saldo = float(1000)
 print("...: Bievenidos al cajero automatico TechBank Riwi Digital:...")
@@ -10,10 +11,17 @@ else:
     print(("Error"))
 print("GRUPO 2")
 
+=======
+from menu import menu_de_opciones
+saldo = float(1000)
+print("...: Bievenidos al cajero automatico TechBank Riwi Digital:...")
+
+>>>>>>> origin/feature-validacion-entrada
 for i in range(3):
     pin = input("Ingrese el pin ")
     if pin== "1234":
         print("¡Contraseña correcta! Acceso concedido.")
+        menu_de_opciones()
     else:
         print("Contraseña incorrecta. Inténtalo de nuevo.")
 else:
