@@ -1,4 +1,15 @@
 
+def autenticacion():
+     for i in range(3):
+        pin = input("Ingrese el pin ")
+        if pin== "1234":
+            print("¡Contraseña correcta! Acceso concedido.")
+        elif pin != ("1234"):
+            print("Contraseña incorrecta. Inténtalo de nuevo.")
+     else:
+            print("Has agotado tus intentos. Acceso denegado. ")
+     
+    
 
 def retiro(saldo):
         Validador = True
