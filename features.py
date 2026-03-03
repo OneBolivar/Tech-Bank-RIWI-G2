@@ -26,5 +26,3 @@ def deposito(saldo):
             Validador = False
             return f"Su saldo total es de: {(Deposito + saldo)}"
 
-prueba = retiro(500)
-print(prueba)
