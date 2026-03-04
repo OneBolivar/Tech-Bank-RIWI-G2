@@ -1,2 +1,3 @@
-__pycache__
+# Archivos compilados de Python
+__pycache__/
 *.pyc 

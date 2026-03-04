@@ -1,12 +1,6 @@
-def retiro(Retiro,saldo):
-       
-        while Validador:
-            if Retiro < 0:
-                print("Ingrese una cantidad valida")
-                Retiro = float(input("Ingrese monto a retirar: "))
-            if Retiro > 0:
-                    if Retiro > saldo:
-                        return f"Fondos insuficientes"
-                    elif Retiro <= saldo:
-                        return f"Retiro efectuado, su nuevo saldo es de: {(saldo - Retiro)}"
-                    Validador = False
+from historial import historial_operaciones
+
+def retirar_dinero(valor, cuenta):
+    cuenta['Saldo']-= valor
+    print(f"Has retirado {valor}. Tu nuevo saldo es {cuenta['Saldo']}.")
+    historial_operaciones("Retirar", valor, cuenta['Saldo'])

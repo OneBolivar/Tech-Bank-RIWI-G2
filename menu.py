@@ -1,15 +1,19 @@
-from validacion import validacion_deposito, validacion_retiro
+from validacion_entrada import validar_monto
+from historial import historial_operaciones
 
-def menu(saldo):
-    Ejecucion = int(input("Elija una opcion: 1. Consultar saldo|| 2. Retirar dinero || 3. Depositar dinero: || 4. salir"))
+def menu(cuenta):
+    print("=" * 40)
+    print("                 Menu")
+    print("=" * 40)
+    Ejecucion = int(input("Elija una opcion: 1. Consultar saldo|| 2. Retirar dinero || 3. Depositar dinero: "))
     if Ejecucion == 1:
-        return f"Su saldo actual es de: {saldo}"
+        print("Tu saldo es de: ", cuenta['Saldo'])
+        historial_operaciones("consultar", 0, cuenta['Saldo'])
     elif Ejecucion == 2:
-        validacion_retiro(saldo)                
+        validar_monto("Retirar",cuenta)
     elif Ejecucion == 3: 
-         validacion_deposito(saldo)
-    elif Ejecucion == 4:
-        return False
+        validar_monto("Depositar",cuenta)
     else:
          print("Opcion invalida")
+
          
