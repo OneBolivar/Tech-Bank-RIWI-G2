@@ -13,4 +13,4 @@ def validar_monto(tipo_operacion, cuenta):
                 if(validacion_limite_retiro(monto, cuenta)): control_de_retiro(monto, cuenta)
             else:
                 despositar(monto, cuenta)
-                break
+            break
