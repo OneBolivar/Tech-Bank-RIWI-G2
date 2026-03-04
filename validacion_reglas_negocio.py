@@ -1,12 +1,12 @@
 # Creando validacion de reglas de negocio
 # REGLA: El monto ingresado no debe ser mayor al saldo 
-def validacion_limite_retiro (monto, saldo):
+def validacion_limite_retiro (monto, cuenta):
     while True:
-        if monto > saldo:
+        if monto > cuenta['Saldo']:
             print("Monto excede el saldo en cuenta")
-            monto = int(input("Por favor ingresa el monto a retirar nuevamente: "))
+            return False
         else: 
-            print("Monto a retirar valido")
-            break
+            return True
+            
 
 
