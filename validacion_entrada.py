@@ -10,7 +10,11 @@ def validar_monto(tipo_operacion, cuenta):
             print("El monto debe ser mayor que cero.")
         else:
             if(tipo_operacion=="Retirar"):
-                if(validacion_limite_retiro(monto, cuenta)): control_de_retiro(monto, cuenta)
+                if(validacion_limite_retiro(monto, cuenta)== True): 
+                    control_de_retiro(monto, cuenta) 
+                    break
+                
+                
             else:
                 despositar(monto, cuenta)
-            break
+                break
