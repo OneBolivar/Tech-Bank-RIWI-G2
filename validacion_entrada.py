@@ -11,8 +11,8 @@ def validar_monto(tipo_operacion, cuenta):
         else:
             if(tipo_operacion=="Retirar"):
                 if(validacion_limite_retiro(monto, cuenta)== True): 
-                    control_de_retiro(monto, cuenta) 
-                    break
+                   if (control_de_retiro(monto, cuenta) == True):
+                      break
                 
                 
             else:

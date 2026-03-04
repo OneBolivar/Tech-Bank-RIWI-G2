@@ -1,6 +1,6 @@
 from menu import menu
 
-def autenticacion(cuenta):
+def  autenticacion(cuenta):
      for i in range(3):
         pin = input("Ingrese el pin: ")
         if pin==cuenta['Pin']:
