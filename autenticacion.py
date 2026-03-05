@@ -1,6 +1,6 @@
 from menu import menu
 
-def autenticacion(cuenta):
+def  autenticacion(cuenta):
      for i in range(3):
         pin = input("Ingrese el pin: ")
         if pin==cuenta['Pin']:
@@ -20,3 +20,4 @@ def autenticacion(cuenta):
             print("Contraseña incorrecta. Inténtalo de nuevo.")
      else:
             print("Has agotado tus intentos. Acceso denegado. ")
+ 
