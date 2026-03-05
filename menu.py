@@ -6,10 +6,10 @@ def menu(cuenta):
     print("=" * 40)
     print("                 Menu")
     print("=" * 40)
-    Ejecucion = int(input("Elija una opcion"))
     print("1- Consultar Saldo")
     print("2- Retiro de saldo")
     print("3- Depositar Dinero")
+    Ejecucion = int(input("Elija una opcion"))
     if Ejecucion == 1:
         print("Tu Saldo es de: ", cuenta['Saldo'])
         historial_operaciones("consultar", 0, cuenta['Saldo'])

@@ -10,3 +10,7 @@ def validacion_limite_retiro (monto, cuenta):
             
 
 
+    if monto > cuenta['Saldo']:
+        print("Monto excede el saldo en cuenta. Fondos insuficientes.")
+        return False
+    return True
