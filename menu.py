@@ -11,7 +11,7 @@ def menu(cuenta):
     print("2- Retiro de saldo")
     print("3- Depositar Dinero")
     if Ejecucion == 1:
-        print("Tu saldo es de: ", cuenta['Saldo'])
+        print("Tu Saldo es de: ", cuenta['Saldo'])
         historial_operaciones("consultar", 0, cuenta['Saldo'])
     elif Ejecucion == 2:
         validar_monto("Retirar", cuenta)
